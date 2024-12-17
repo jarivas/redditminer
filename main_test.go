@@ -2,7 +2,6 @@ package main
 
 import (
 	"testing"
-	"time"
 )
 
 func TestProcessSubreddit(t *testing.T) {
@@ -18,33 +17,12 @@ func TestProcessSubreddit(t *testing.T) {
 
 	index := 0
 	subreddit := data.Subreddits[index]
+	
+	e := make(chan error)
 
-	go processSubreddit(data, subreddit)
+	go processSubreddit(subreddit, e)
 
-	wait(t, subreddit)
-}
+	err = <- e
 
-func wait(t *testing.T, subreddit *SubredditInfo) {
-	d, err := time.ParseDuration("300ms")
-	if err != nil {
-		t.Error(err)
-	}
-
-	lastId := subreddit.LastId
-	max := 10
-	i := 0
-
-	for ; i < max; {
-		time.Sleep(d)
-
-		if lastId == subreddit.LastId {
-			i = i + 1
-		} else {
-			i = max
-		}
-	}
-
-	if lastId == subreddit.LastId {
-		t.Error("lastid not updated")
-	}
+	t.Error(err)
 }

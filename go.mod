@@ -5,8 +5,8 @@ go 1.23.4
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
-	github.com/jarivas/redditmongo v1.0.2 // indirect
-	github.com/jarivas/redditscraper v1.0.6 // indirect
+	github.com/jarivas/redditmongo v1.0.7 // indirect
+	github.com/jarivas/redditscraper v1.1.1 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/kamva/mgm/v3 v3.5.0 // indirect
