@@ -1,11 +1,9 @@
 package main
 
 import (
-	"errors"
 	"log"
 
 	"github.com/jarivas/redditmongo"
-	"github.com/jarivas/redditscraper"
 )
 
 func main() {
@@ -30,38 +28,12 @@ func main() {
 	}
 }
 
-func getMongoReddit(subreddit string) (*redditmongo.RedditMongo, error) {
-	ms, err := redditmongo.MongoStorage{}.FromEnv()
-
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	rs, err := redditscraper.RedditScraper{}.FromEnv(subreddit)
-
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	return redditmongo.RedditMongo{}.New(ms, rs)
-}
-
 func processSubreddit(subreddit string, e chan<- error) {
-	rm, err := getMongoReddit(subreddit)
+	rm, err := redditmongo.RedditMongo{}.FromEnv(subreddit)
 
 	if err != nil {
 		e <- err
 	}
 
-	s := make(chan string)
-
-	go rm.Scrape(s, e)
-
-	for lastId := range(s) {
-		if (lastId != "") {
-			log.Printf("%v - %v\n", subreddit, lastId)
-		} else {
-			e <- errors.New("empty last id on " + subreddit)
-		}
-	}
+	go rm.Scrape(e)
 }

@@ -26,3 +26,7 @@ func TestProcessSubreddit(t *testing.T) {
 
 	t.Error(err)
 }
+
+func TestMain(t *testing.T) {
+	main()
+}
