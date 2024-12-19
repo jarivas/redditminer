@@ -20,7 +20,7 @@ func main() {
 	e := make(chan error)
 
 	for _, subreddit := range data.Subreddits {
-		go processSubreddit(subreddit, e)
+		processSubreddit(subreddit, e)
 	}
 
 	for err := range(e) {

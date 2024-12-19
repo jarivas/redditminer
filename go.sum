@@ -8,10 +8,10 @@ github.com/golang/snappy v0.0.4/go.mod h1:/XxbfmMg8lxefKM7IXC3fBNl/7bRcc72aCRzEW
 github.com/google/go-cmp v0.5.2/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
 github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
 github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
-github.com/jarivas/redditmongo v1.0.8 h1:FO3YK0F0o4lTu5kUP5wp7KnJWyAYrXKnIFuIgOeUhv8=
-github.com/jarivas/redditmongo v1.0.8/go.mod h1:gLlrYnZownFr53MM6A8TC0SGA+A2L4ojkvY0nEf7nmg=
-github.com/jarivas/redditscraper v1.1.2 h1:S5F5eae0WHyRz91ltd/mHJ4MrgBuNmUnyyZCU96bMrg=
-github.com/jarivas/redditscraper v1.1.2/go.mod h1:pAfbwzg8Eu6a/y3JOSxcUdjdjh/+pgfX8MKiBYWCvvA=
+github.com/jarivas/redditmongo v1.1.2 h1:+/RCbxLEhsScVmeNepDTjRp2T5ukuh5+r3wOnP8kR68=
+github.com/jarivas/redditmongo v1.1.2/go.mod h1:LGIBH2zJNmNFoXDE5/fXk2dLyV0PNzqjLfRoMiQoWL0=
+github.com/jarivas/redditscraper v1.1.8 h1:5a/3ARgD1zezWU/vEhRWGJEDnFitjiuzw7c9vhPQTdU=
+github.com/jarivas/redditscraper v1.1.8/go.mod h1:pAfbwzg8Eu6a/y3JOSxcUdjdjh/+pgfX8MKiBYWCvvA=
 github.com/jinzhu/inflection v1.0.0 h1:K317FqzuhWc8YvSVlFMCCUb36O/S9MCKRDI7QkRKD/E=
 github.com/jinzhu/inflection v1.0.0/go.mod h1:h+uFLlag+Qp1Va5pdKtLDYj+kHp5pxUVkryuEj+Srlc=
 github.com/kamva/mgm/v3 v3.5.0 h1:/2mNshpqwAC9spdzJZ0VR/UZ/SY/PsNTrMjT111KQjM=
@@ -56,8 +56,8 @@ go.mongodb.org/mongo-driver v1.17.1/go.mod h1:wwWm/+BuOddhcq3n68LKRmgk2wXzmF6s0S
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20201216223049-8b5274cf687f/go.mod h1:jdWPYTVW3xRLrWPugEBEK3UY2ZEsg3UU495nc5E+M+I=
 golang.org/x/crypto v0.0.0-20210921155107-089bfa567519/go.mod h1:GvvjBRRGRdwPK5ydBHafDWAxML/pGHZbMvKqRZ5+Abc=
-golang.org/x/crypto v0.30.0 h1:RwoQn3GkWiMkzlX562cLB7OxWvjH1L8xutO2WoJcRoY=
-golang.org/x/crypto v0.30.0/go.mod h1:kDsLvtWBEx7MV9tJOj9bnXsPbxwJQ6csT/x4KIN4Ssk=
+golang.org/x/crypto v0.31.0 h1:ihbySMvVjLAeSH1IbfcRTkD/iNscyz8rGzjF/E5hV6U=
+golang.org/x/crypto v0.31.0/go.mod h1:kDsLvtWBEx7MV9tJOj9bnXsPbxwJQ6csT/x4KIN4Ssk=
 golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4/go.mod h1:jJ57K6gSWd91VN4djpZkiMVwK6gcyfeH4XE8wZrZaV4=
 golang.org/x/net v0.0.0-20190311183353-d8887717615a/go.mod h1:t9HGtf8HONx5eT2rtn7q6eTqICYqUVnKs3thJo3Qplg=
 golang.org/x/net v0.0.0-20190404232315-eb5bcb51f2a3/go.mod h1:t9HGtf8HONx5eT2rtn7q6eTqICYqUVnKs3thJo3Qplg=
